@@ -1,5 +1,12 @@
 # ArgoCD
 
+- Basic Concepts
+- Install ArgoCD in Minikube
+- Deploy an ArgoCD Application from CLI
+- Deploy production with GipOps Principles
+  - Define an ArgoCD Application like kubernetes objects
+- Create development with Gitops Principles
+- Create preview environment without touch kubernetes cluster
 ### Install ArgoCD in Minikube
 
 - Export variables
@@ -70,7 +77,7 @@ argocd app delete voting-app
 kubectl delete ns voting-app
 ```
 
-## Deploy application in production with GipOps Principles
+## Deploy production with GipOps Principles
 
 - Download repo from git
 
@@ -115,9 +122,9 @@ kubectl get appproject
 open http://argocd.$INGRESS_HOST.nip.io/settings/projects
 ```
 
-### Define an ArgoCD Application like kubernetes objects
+- Define an ArgoCD Application like kubernetes objects
 
-- Create Helm templates
+Create Helm templates
 
 ```
 mkdir -p helm/templates
@@ -173,7 +180,7 @@ spec:
 EOF
 ```
 
-### Create Helm Manifest for ArgoCD Production Application
+- Create Helm Manifest for ArgoCD Production Application
 
 ```
 cat << EOF >> apps.yaml                                            
@@ -210,7 +217,7 @@ open http://argocd.$INGRESS_HOST.nip.io
 ```
 
 
-### Create Development Environment for Votting App with Gitops Principles
+### Create development environment with Gitops Principles
 
 The differente are branch and helm manifest change slightly
 
@@ -238,7 +245,7 @@ open http://vote.develop.$INGRESS_HOST.nip.io
 open http://result.develop.$INGRESS_HOST.nip.io
 ```
 
-### Create Environment without touch K8S for Preview Environments
+## Create preview environment without touch kubernetes cluster
 
 - Clone repo previews
 
