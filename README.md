@@ -1,23 +1,26 @@
 # ArgoCD
 
+## Index
+
 - Basic Concepts
 - Install ArgoCD in Minikube
 - Deploy an ArgoCD Application from CLI
 - Deploy production with GipOps Principles
-  - Define an ArgoCD Application like kubernetes objects
 - Create development with Gitops Principles
 - Create preview environment without touch kubernetes cluster
-### Install ArgoCD in Minikube
 
-- Export variables
+## Basic Concepts
 
-```
-export INGRESS_HOST=(minikube ip)
-```
+- ArgoCD
+- ArgoCD Projects
+- ArgoCD Application
+## Install ArgoCD in Minikube
 
 - Create install variables for ArgoCD Helm Charts
 
 ```
+export INGRESS_HOST=(minikube ip)
+
 helm repo add argo https://argoproj.github.io/argo-helm
 
 cat << EOF >> argocd/argocd-values.yaml
