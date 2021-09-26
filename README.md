@@ -1,6 +1,7 @@
 # GitOps - Continuous Delivery with ArgoCD
 
-![ArgoCD](images/argocd.png)
+![ArgoCD](images/argocd.png)<br>
+
 Lo que vamos a ver en este repo es el ejercicio práctico de los conceptos de GitOps en lo que respecta a CD. 
 
 1. Introducción
