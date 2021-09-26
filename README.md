@@ -599,4 +599,4 @@ Como podemos ver abordar una estrategia de GitOps es una muy buena opción no so
 ## Revisores
 
 - Gonzalo Acosta <gonzalo.acosta@semperti.com>
-- Emilio Buchailliot <emilio.buchailliot@semperti.com>
+- Emilio Buchaillot <emilio.buchaillot@semperti.com>
